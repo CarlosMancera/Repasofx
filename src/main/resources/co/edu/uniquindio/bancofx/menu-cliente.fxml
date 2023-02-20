@@ -6,32 +6,36 @@
 <?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.bancofx.MenuClienteController">
-   <children>
-      <Button fx:id="btnAgregarCliente" layoutX="18.0" layoutY="48.0" mnemonicParsing="false" onAction="#agregarCliente" prefHeight="88.0" prefWidth="180.0" text="Agregar Cliente">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnEdtarCliente" layoutX="267.0" layoutY="48.0" mnemonicParsing="false" onAction="#editarCliente" prefHeight="88.0" prefWidth="180.0" text="Editar Cliente">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnListaClientes" layoutX="18.0" layoutY="180.0" mnemonicParsing="false" onAction="#ejecutarListaClientes" prefHeight="88.0" prefWidth="180.0" text="Ver Lista Clientes">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Label layoutX="83.0" layoutY="-3.0" prefHeight="35.0" prefWidth="300.0" text="Seleccione una opción:">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Button fx:id="btnEliminarClientes" layoutX="267.0" layoutY="180.0" mnemonicParsing="false" onAction="#eliminarCliente" prefHeight="88.0" prefWidth="180.0" text="Eliminar Cliente">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-   </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0"
+      prefWidth="466.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="co.edu.uniquindio.bancofx.MenuClienteController">
+   <Button fx:id="btnAgregarCliente" layoutX="18.0" layoutY="48.0" mnemonicParsing="false" onAction="#agregarCliente"
+           prefHeight="88.0" prefWidth="180.0" text="Agregar Cliente">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Button>
+   <Button fx:id="btnEdtarCliente" layoutX="267.0" layoutY="48.0" mnemonicParsing="false" onAction="#editarCliente"
+           prefHeight="88.0" prefWidth="180.0" text="Editar Cliente">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Button>
+   <Button fx:id="btnListaClientes" layoutX="18.0" layoutY="180.0" mnemonicParsing="false"
+           onAction="#ejecutarListaClientes" prefHeight="88.0" prefWidth="180.0" text="Ver Lista Clientes">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Button>
+   <Label layoutX="83.0" layoutY="-3.0" prefHeight="35.0" prefWidth="300.0" text="Seleccione una opción:">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <Button fx:id="btnEliminarClientes" layoutX="267.0" layoutY="180.0" mnemonicParsing="false"
+           onAction="#eliminarCliente" prefHeight="88.0" prefWidth="180.0" text="Eliminar Cliente">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Button>
 </Pane>
