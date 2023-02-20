@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.bancofx.MenuCuentasBancariasController">
    <children>
       <TableView fx:id="tblListaClientes" layoutX="355.0" layoutY="52.0" onSort="#abrirListaClientes" prefHeight="296.0" prefWidth="465.0">
@@ -25,8 +24,8 @@
       <Label alignment="CENTER" layoutX="57.0" layoutY="43.0" prefHeight="22.0" prefWidth="103.0" text="Cedula" />
       <Label alignment="CENTER" layoutX="57.0" layoutY="107.0" prefHeight="22.0" prefWidth="103.0" text="Nombres" />
       <Label alignment="CENTER" layoutX="215.0" layoutY="180.0" prefHeight="22.0" prefWidth="103.0" text="Tipo de Cuenta" />
-      <TextField fx:id="txtCedula" layoutX="34.0" layoutY="72.0" onAction="#numeroCedula" />
-      <TextField fx:id="txtAgregarNombre" layoutX="34.0" layoutY="140.0" onAction="#nombreCliente" />
+      <TextField fx:id="txtCedula" layoutX="34.0" layoutY="72.0" />
+      <TextField fx:id="txtAgregarNombre" layoutX="34.0" layoutY="140.0" />
       <Button fx:id="btnAgregarClientes" layoutX="309.0" layoutY="364.0" mnemonicParsing="false" onAction="#agregarClientes" prefHeight="45.0" prefWidth="122.0" text="Agregar Cliente">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -34,23 +33,23 @@
       </Button>
       <ChoiceBox fx:id="lstTipoCuenta" layoutX="192.0" layoutY="212.0" prefWidth="150.0" />
       <Label alignment="CENTER" layoutX="220.0" layoutY="43.0" prefHeight="22.0" prefWidth="103.0" text="Numero Cuenta" />
-      <TextField fx:id="txtCedula1" layoutX="197.0" layoutY="72.0" onAction="#numeroCedula" />
+      <TextField fx:id="txtCedula1" layoutX="197.0" layoutY="72.0" />
       <Label layoutX="83.0" layoutY="15.0" text="Datos Cliente" />
       <Label layoutX="237.0" layoutY="15.0" text="Datos Cuenta" />
       <Label alignment="CENTER" layoutX="216.0" layoutY="113.0" prefHeight="22.0" prefWidth="103.0" text="Saldo" />
-      <TextField fx:id="txtCedula11" layoutX="193.0" layoutY="142.0" onAction="#numeroCedula" />
+      <TextField fx:id="txtCedula11" layoutX="193.0" layoutY="142.0" />
       <Label alignment="CENTER" layoutX="57.0" layoutY="179.0" prefHeight="22.0" prefWidth="103.0" text="Apellidos" />
-      <TextField fx:id="txtAgregarNombre1" layoutX="34.0" layoutY="212.0" onAction="#nombreCliente" />
+      <TextField fx:id="txtAgregarNombre1" layoutX="34.0" layoutY="212.0" />
       <Label alignment="CENTER" layoutX="57.0" layoutY="254.0" prefHeight="22.0" prefWidth="103.0" text="Direccion" />
-      <TextField fx:id="txtAgregarNombre11" layoutX="34.0" layoutY="287.0" onAction="#nombreCliente" />
+      <TextField fx:id="txtAgregarNombre11" layoutX="34.0" layoutY="287.0" />
       <Label alignment="CENTER" layoutX="57.0" layoutY="328.0" prefHeight="22.0" prefWidth="103.0" text="Email" />
-      <TextField fx:id="txtAgregarNombre12" layoutX="34.0" layoutY="361.0" onAction="#nombreCliente" />
-      <Button fx:id="btnAgregarClientes1" layoutX="452.0" layoutY="364.0" mnemonicParsing="false" onAction="#agregarClientes" prefHeight="45.0" prefWidth="122.0" text="Editar Cliente">
+      <TextField fx:id="txtAgregarNombre12" layoutX="34.0" layoutY="361.0" />
+      <Button fx:id="btnAgregarClientes1" layoutX="452.0" layoutY="364.0" mnemonicParsing="false" onAction="#editarClientes" prefHeight="45.0" prefWidth="122.0" text="Editar Cliente">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btnAgregarClientes2" layoutX="593.0" layoutY="364.0" mnemonicParsing="false" onAction="#agregarClientes" prefHeight="45.0" prefWidth="140.0" text="Eliminar Cliente">
+      <Button fx:id="btnAgregarClientes2" layoutX="593.0" layoutY="364.0" mnemonicParsing="false" onAction="#eliminarClientes" prefHeight="45.0" prefWidth="140.0" text="Eliminar Cliente">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
