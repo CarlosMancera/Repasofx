@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 public class MenuTransaccionController {
 
     @FXML
-    private Button btnListaTrransacciones;
+    private Button btnListaTransacciones;
 
     @FXML
     private Button btnRealizarTransaccion;
@@ -23,4 +23,3 @@ public class MenuTransaccionController {
     }
 
 }
-
