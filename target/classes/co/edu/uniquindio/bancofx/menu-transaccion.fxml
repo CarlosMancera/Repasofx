@@ -4,15 +4,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.bancofx.MenuTransaccionController">
-   <children>
-      <Button fx:id="btnRealizarTransaccion" layoutX="49.0" layoutY="71.0" mnemonicParsing="false" onAction="#realizarTransaccion" prefHeight="79.0" prefWidth="191.0" text="Realizar Transaccion">
-         <font>
-            <Font size="18.0" />
-         </font></Button>
-      <Button fx:id="btnListaTransacciones" layoutX="280.0" layoutY="71.0" mnemonicParsing="false" onAction="#abrirListaTransacciones" prefHeight="79.0" prefWidth="191.0" text="Lista Transacciones">
-         <font>
-            <Font size="18.0" />
-         </font></Button>
-   </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0"
+      prefWidth="522.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="co.edu.uniquindio.bancofx.MenuTransaccionController">
+   <Button fx:id="btnRealizarTransaccion" layoutX="49.0" layoutY="71.0" mnemonicParsing="false"
+           onAction="#realizarTransaccion" prefHeight="79.0" prefWidth="191.0" text="Realizar Transaccion">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Button>
+   <Button fx:id="btnListaTransacciones" layoutX="280.0" layoutY="71.0" mnemonicParsing="false"
+           onAction="#abrirListaTransacciones" prefHeight="79.0" prefWidth="191.0" text="Lista Transacciones">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Button>
 </Pane>

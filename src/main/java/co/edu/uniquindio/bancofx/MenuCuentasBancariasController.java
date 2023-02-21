@@ -13,6 +13,12 @@ public class MenuCuentasBancariasController {
     private Button btnAgregarClientes;
 
     @FXML
+    private Button btnAgregarClientes1;
+
+    @FXML
+    private Button btnAgregarClientes2;
+
+    @FXML
     private ChoiceBox<?> lstTipoCuenta;
 
     @FXML
@@ -22,7 +28,22 @@ public class MenuCuentasBancariasController {
     private TextField txtAgregarNombre;
 
     @FXML
+    private TextField txtAgregarNombre1;
+
+    @FXML
+    private TextField txtAgregarNombre11;
+
+    @FXML
+    private TextField txtAgregarNombre12;
+
+    @FXML
     private TextField txtCedula;
+
+    @FXML
+    private TextField txtCedula1;
+
+    @FXML
+    private TextField txtCedula11;
 
     @FXML
     void abrirListaClientes(ActionEvent event) {
@@ -35,12 +56,12 @@ public class MenuCuentasBancariasController {
     }
 
     @FXML
-    void nombreCliente(ActionEvent event) {
+    void editarClientes(ActionEvent event) {
 
     }
 
     @FXML
-    void numeroCedula(ActionEvent event) {
+    void eliminarClientes(ActionEvent event) {
 
     }
 
