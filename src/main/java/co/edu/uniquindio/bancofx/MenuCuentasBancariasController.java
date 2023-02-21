@@ -3,65 +3,38 @@ package co.edu.uniquindio.bancofx;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 
 public class MenuCuentasBancariasController {
 
     @FXML
-    private Button btnAgregarClientes;
+    private Button btnAgregarCliente;
 
     @FXML
-    private Button btnAgregarClientes1;
+    private Button btnEdtarCliente;
 
     @FXML
-    private Button btnAgregarClientes2;
+    private Button btnEliminarClientes;
 
     @FXML
-    private ChoiceBox<?> lstTipoCuenta;
+    private Button btnListaClientes;
 
     @FXML
-    private TableView<?> tblListaClientes;
-
-    @FXML
-    private TextField txtAgregarNombre;
-
-    @FXML
-    private TextField txtAgregarNombre1;
-
-    @FXML
-    private TextField txtAgregarNombre11;
-
-    @FXML
-    private TextField txtAgregarNombre12;
-
-    @FXML
-    private TextField txtCedula;
-
-    @FXML
-    private TextField txtCedula1;
-
-    @FXML
-    private TextField txtCedula11;
-
-    @FXML
-    void abrirListaClientes(ActionEvent event) {
+    void agregarCliente(ActionEvent event) {
 
     }
 
     @FXML
-    void agregarClientes(ActionEvent event) {
+    void editarCliente(ActionEvent event) {
 
     }
 
     @FXML
-    void editarClientes(ActionEvent event) {
+    void ejecutarListaClientes(ActionEvent event) {
 
     }
 
     @FXML
-    void eliminarClientes(ActionEvent event) {
+    void eliminarCliente(ActionEvent event) {
 
     }
 
