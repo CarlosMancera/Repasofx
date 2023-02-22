@@ -12,8 +12,6 @@ public class BancoModelo {
     private ArrayList<EmpleadoModelo> listaEmpleados = new ArrayList<EmpleadoModelo>();
 
 
-
-
     //-------------------Métodos para agregar------------------
 
     public void setCliente (ClienteModelo cliente){
@@ -32,11 +30,6 @@ public class BancoModelo {
         empleado.setTransaccion(transaccion);
 
     }
-
-
-
-
-
 
 
     //--------------------Metodos Get para listas------------------------
