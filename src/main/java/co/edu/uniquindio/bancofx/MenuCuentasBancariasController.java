@@ -2,6 +2,7 @@ package co.edu.uniquindio.bancofx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
 public class MenuCuentasBancariasController {
 
@@ -22,5 +23,8 @@ public class MenuCuentasBancariasController {
 
     @FXML
     private TableColumn<?, ?> colNumeroCuenta;
+
+    @FXML
+    private TableView<?> tblTablaCuentas;
 
 }

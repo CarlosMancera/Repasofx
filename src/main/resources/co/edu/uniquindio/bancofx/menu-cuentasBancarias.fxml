@@ -12,7 +12,7 @@
          <Font size="24.0" />
       </font>
    </Label>
-   <TableView layoutX="93.0" layoutY="84.0" prefHeight="306.0" prefWidth="385.0">
+   <TableView fx:id="tblTablaCuentas" layoutX="93.0" layoutY="84.0" prefHeight="306.0" prefWidth="385.0">
      <columns>
        <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
        <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />

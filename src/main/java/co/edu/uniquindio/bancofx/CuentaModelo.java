@@ -5,6 +5,11 @@ public class CuentaModelo {
     private String numero;
     private double saldo;
 
+    public CuentaModelo(String numero, double saldo){
+        this.numero = numero;
+        this.saldo = saldo;
+    }
+
     public String getNumero() {
         return numero;
     }

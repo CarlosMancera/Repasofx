@@ -12,8 +12,13 @@ public class BancoModelo {
     private ArrayList<EmpleadoModelo> listaEmpleados = new ArrayList<EmpleadoModelo>();
 
     public BancoModelo(){
+        TransaccionModelo transaccionMaster = new TransRetiro(100000, "18:00", "22/02/2023");
+        CuentaModelo cuentaMaster = new CuentaAhorros("0000", 150000);
 
+        listaCuentas.add(cuentaMaster);
         listaEmpleados.add(new EmpleadoModelo("Omar", "1981", "1981"));
+        listaClientes.add(new ClienteModelo("Carlos", "Mancera","1234","Colinas","carlos@gmail.com", cuentaMaster));
+        listaTransacciones.add(transaccionMaster);
     }
 
 

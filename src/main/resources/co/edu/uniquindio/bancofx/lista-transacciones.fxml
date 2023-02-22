@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="473.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.bancofx.ListaTransaccionesController">
-    <TableView layoutX="41.0" layoutY="99.0" prefHeight="331.0" prefWidth="431.0">
+    <TableView fx:id="tblTablaTransacciones" layoutX="41.0" layoutY="99.0" prefHeight="331.0" prefWidth="431.0">
       <columns>
           <TableColumn fx:id="colTipo" prefWidth="91.42858123779297" text="Tipo" />
           <TableColumn fx:id="colEstado" prefWidth="91.42855834960938" text="Estado" />
