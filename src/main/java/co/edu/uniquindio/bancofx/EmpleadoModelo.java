@@ -7,6 +7,12 @@ public class EmpleadoModelo {
     private String nombre, cedula, codigo;
     private ArrayList<TransaccionModelo> listaTransacciones = new ArrayList<>();
 
+    public EmpleadoModelo(String nombre, String cedula, String codigo){
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.codigo = codigo;
+    }
+
     public String getNombre() {
         return nombre;
     }

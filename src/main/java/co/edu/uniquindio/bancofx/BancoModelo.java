@@ -11,6 +11,11 @@ public class BancoModelo {
     private ArrayList<TransaccionModelo> listaTransacciones = new ArrayList<TransaccionModelo>();
     private ArrayList<EmpleadoModelo> listaEmpleados = new ArrayList<EmpleadoModelo>();
 
+    public BancoModelo(){
+
+        listaEmpleados.add(new EmpleadoModelo("Omar", "1094953624", "1981"));
+    }
+
 
     //-------------------Métodos para agregar------------------
 

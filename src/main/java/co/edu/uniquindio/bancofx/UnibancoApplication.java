@@ -8,8 +8,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class UnibancoApplication extends Application {
+
+    public static BancoModelo unibanco;
     @Override
     public void start(Stage stage) throws IOException {
+        unibanco = new BancoModelo();
         FXMLLoader fxmlLoader = new FXMLLoader(UnibancoApplication.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Principal");
