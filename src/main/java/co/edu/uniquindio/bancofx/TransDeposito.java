@@ -6,5 +6,8 @@ public class TransDeposito extends TransaccionModelo {
         super(valor, hora, fecha);
     }
 
-
+    @Override
+    public String getTipoTransaccion() {
+        return "Deposito";
+    }
 }

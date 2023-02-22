@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="473.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.bancofx.ListaTransaccionesController">
+    <TableView layoutX="41.0" layoutY="99.0" prefHeight="331.0" prefWidth="431.0">
+      <columns>
+          <TableColumn fx:id="colTipo" prefWidth="91.42858123779297" text="Tipo" />
+          <TableColumn fx:id="colEstado" prefWidth="91.42855834960938" text="Estado" />
+          <TableColumn fx:id="colValor" prefWidth="87.42860412597656" text="Valor" />
+          <TableColumn fx:id="colFecha" prefWidth="89.14288330078125" text="Fecha" />
+          <TableColumn fx:id="colHora" prefWidth="76.5714111328125" text="Hora" />
+      </columns>
+    </TableView>
+   <Label layoutX="113.0" layoutY="33.0" text="LISTA DE TRANSACCIONES">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+</AnchorPane>

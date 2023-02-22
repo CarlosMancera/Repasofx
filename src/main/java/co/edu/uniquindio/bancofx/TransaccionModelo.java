@@ -3,14 +3,16 @@ package co.edu.uniquindio.bancofx;
 public class TransaccionModelo {
 
     private double valor;
-    private String hora, fecha, estadoTransaccion;
+    private String hora, fecha, estadoTransaccion, tipoTransaccion;
 
     public TransaccionModelo(double valor, String hora, String fecha){
         this.valor = valor;
         this.hora = hora;
         this.fecha = fecha;
     }
-
+    public String getTipoTransaccion(){
+        return tipoTransaccion;
+    }
     public double getValor() {
         return valor;
     }

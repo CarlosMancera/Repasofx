@@ -3,16 +3,29 @@ package co.edu.uniquindio.bancofx;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class MenuRegistrarEmpleadoController {
 
     @FXML
-    private Button btnListaEmpleados;
+    private Button btnRegistrarEmpleado;
 
     @FXML
-    private Button btnRegistrarEmpleados;
+    private TableColumn<?, ?> colApellido;
+
+    @FXML
+    private TableColumn<?, ?> colCedula;
+
+    @FXML
+    private TableColumn<?, ?> colDireccion;
+
+    @FXML
+    private TableColumn<?, ?> colEmail;
+
+    @FXML
+    private TableColumn<?, ?> colNombre;
 
     @FXML
     private TableView<?> tblListaEmpleados;
@@ -31,11 +44,6 @@ public class MenuRegistrarEmpleadoController {
 
     @FXML
     private TextField txtNombreEmpleado;
-
-    @FXML
-    void generarListaEmpleados(ActionEvent event) {
-
-    }
 
     @FXML
     void registrarNuevoEmpleado(ActionEvent event) {

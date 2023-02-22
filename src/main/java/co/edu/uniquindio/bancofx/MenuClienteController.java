@@ -10,85 +10,69 @@ import javafx.scene.layout.AnchorPane;
 
 public class MenuClienteController {
 
-    @FXML private TableColumn<?, ?> ClmnNombre;
+    @FXML
+    private Button btnAgregarCliente;
 
-    @FXML private TableColumn<?, ?> ClmnApellido;
+    @FXML
+    private Button btnEditarCliente;
 
-    @FXML private TableColumn<?, ?> ClmnCedula;
+    @FXML
+    private Button btnEliminarCliente;
 
-    @FXML private TableColumn<?, ?> ClmnCuenta;
+    @FXML
+    private TableColumn<?, ?> colApellido;
 
-    @FXML private TableColumn<?, ?> ClmnDireccion;
+    @FXML
+    private TableColumn<?, ?> colCedula;
 
-    @FXML private TableColumn<?, ?> ClmnEmail;
+    @FXML
+    private TableColumn<?, ?> colCuenta;
 
+    @FXML
+    private TableColumn<?, ?> colDireccion;
 
+    @FXML
+    private TableColumn<?, ?> colEmail;
 
-    @FXML private Button btnAgregarCliente;
+    @FXML
+    private TableColumn<?, ?> colNombre;
 
-    @FXML private Button btnEditarCliente;
+    @FXML
+    private AnchorPane tablaPersonas;
 
-    @FXML private Button btnEliminarCliente;
+    @FXML
+    private TableView<?> tblListaClientes;
 
-    @FXML private Button btnRegistrarNuevoCliente;
+    @FXML
+    private TextField txtApellido;
 
-    @FXML private AnchorPane tablaPersonas;
+    @FXML
+    private TextField txtCedula;
 
-    @FXML private TableView<?> tblListaClientes1;
+    @FXML
+    private TextField txtCuenta;
 
-    @FXML private TextField txtApellido;
+    @FXML
+    private TextField txtDireccion;
 
-    @FXML private TextField txtCedula;
+    @FXML
+    private TextField txtEmail;
 
-    @FXML private TextField txtCuenta;
+    @FXML
+    private TextField txtNombre;
 
-    @FXML private TextField txtDireccion;
-
-    @FXML private TextField txtEmail;
-
-    @FXML private TextField txtNombre;
-
-    @FXML void AgregarApellido(ActionEvent event) {
-
-    }
-
-    @FXML void AgregarCedula(ActionEvent event) {
-
-    }
-
-    @FXML void AgregarCuenta(ActionEvent event) {
-
-    }
-
-    @FXML void AgregarDireccion(ActionEvent event) {
-
-    }
-
-    @FXML void AgregarEmail(ActionEvent event) {
+    @FXML
+    void agregarCliente(ActionEvent event) {
 
     }
 
-    @FXML void AgregarNombre(ActionEvent event) {
+    @FXML
+    void editarCliente(ActionEvent event) {
 
     }
 
-    @FXML void abrirListaClientes(ActionEvent event) {
-
-    }
-
-    @FXML void agregarCliente(ActionEvent event) {
-
-    }
-
-    @FXML void editarCliente(ActionEvent event) {
-
-    }
-
-    @FXML void eliminarCliente(ActionEvent event) {
-
-    }
-
-    @FXML void registrarNuevoCliente(ActionEvent event) {
+    @FXML
+    void eliminarCliente(ActionEvent event) {
 
     }
 

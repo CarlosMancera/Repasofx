@@ -6,4 +6,9 @@ public class TransRetiro extends TransaccionModelo {
         super(valor, hora, fecha);
     }
 
+    @Override
+    public String getTipoTransaccion() {
+        return "Retiro";
+    }
+
 }

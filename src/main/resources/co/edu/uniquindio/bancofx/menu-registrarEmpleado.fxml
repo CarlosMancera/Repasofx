@@ -11,19 +11,14 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.bancofx.MenuRegistrarEmpleadoController">
    <TableView fx:id="tblListaEmpleados" layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="371.0">
       <columns>
-         <TableColumn prefWidth="75.0" text="Nombre" />
-         <TableColumn prefWidth="75.0" text="Apellido" />
-         <TableColumn prefWidth="75.0" text="Cedula" />
-         <TableColumn prefWidth="75.0" text="Email" />
-         <TableColumn prefWidth="75.0" text="Direccion" />
+         <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+         <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
+         <TableColumn fx:id="colCedula" prefWidth="75.0" text="Cedula" />
+         <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+         <TableColumn fx:id="colDireccion" prefWidth="75.0" text="Direccion" />
       </columns>
    </TableView>
-   <Button fx:id="btnRegistrarEmpleados" layoutX="386.0" layoutY="401.0" mnemonicParsing="false" onAction="#registrarNuevoEmpleado" prefHeight="63.0" prefWidth="199.0" text="Registrar Empleado">
-      <font>
-         <Font name="System Bold" size="18.0" />
-      </font>
-   </Button>
-   <Button fx:id="btnListaEmpleados" layoutX="67.0" layoutY="401.0" mnemonicParsing="false" onAction="#generarListaEmpleados" prefHeight="63.0" prefWidth="265.0" text="Generar Lista de Empleados">
+   <Button fx:id="btnRegistrarEmpleado" layoutX="200.0" layoutY="401.0" mnemonicParsing="false" onAction="#registrarNuevoEmpleado" prefHeight="63.0" prefWidth="199.0" text="Registrar Empleado">
       <font>
          <Font name="System Bold" size="18.0" />
       </font>

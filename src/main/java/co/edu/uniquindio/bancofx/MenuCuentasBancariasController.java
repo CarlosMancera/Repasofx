@@ -1,41 +1,26 @@
 package co.edu.uniquindio.bancofx;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 
 public class MenuCuentasBancariasController {
 
     @FXML
-    private Button btnAgregarCliente;
+    private TableColumn<?, ?> colApellido;
 
     @FXML
-    private Button btnEdtarCliente;
+    private TableColumn<?, ?> colCedula;
 
     @FXML
-    private Button btnEliminarClientes;
+    private TableColumn<?, ?> colDireccion;
 
     @FXML
-    private Button btnListaClientes;
+    private TableColumn<?, ?> colEmail;
 
     @FXML
-    void agregarCliente(ActionEvent event) {
-
-    }
+    private TableColumn<?, ?> colNombre;
 
     @FXML
-    void editarCliente(ActionEvent event) {
-
-    }
-
-    @FXML
-    void ejecutarListaClientes(ActionEvent event) {
-
-    }
-
-    @FXML
-    void eliminarCliente(ActionEvent event) {
-
-    }
+    private TableColumn<?, ?> colNumeroCuenta;
 
 }
