@@ -13,7 +13,7 @@ public class BancoModelo {
 
     public BancoModelo(){
 
-        listaEmpleados.add(new EmpleadoModelo("Omar", "1094953624", "1981"));
+        listaEmpleados.add(new EmpleadoModelo("Omar", "1981", "1981"));
     }
 
 

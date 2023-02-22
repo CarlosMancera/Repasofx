@@ -3,7 +3,6 @@ package co.edu.uniquindio.bancofx;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
@@ -25,7 +24,7 @@ public class MenuRegistrarEmpleadoController {
     private TextField txtCedulaEmpleado;
 
     @FXML
-    private Label txtDireccionEmpleado;
+    private TextField txtDireccionEmpleado;
 
     @FXML
     private TextField txtEmailEmpleado;
@@ -34,42 +33,12 @@ public class MenuRegistrarEmpleadoController {
     private TextField txtNombreEmpleado;
 
     @FXML
-    void abrirListaEmpleado(ActionEvent event) {
-
-    }
-
-    @FXML
-    void agregarApellidoEmpleado(ActionEvent event) {
-
-    }
-
-    @FXML
-    void agregarCedulaEmpleado(ActionEvent event) {
-
-    }
-
-    @FXML
-    void agregarDireccionEmpleado(ActionEvent event) {
-
-    }
-
-    @FXML
-    void agregarEmailEmpleado(ActionEvent event) {
-
-    }
-
-    @FXML
-    void agregarNombreEmpleado(ActionEvent event) {
-
-    }
-
-    @FXML
     void generarListaEmpleados(ActionEvent event) {
 
     }
 
     @FXML
-    void registroNuevoEmpleado(ActionEvent event) {
+    void registrarNuevoEmpleado(ActionEvent event) {
 
     }
 

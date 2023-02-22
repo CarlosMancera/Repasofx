@@ -3,7 +3,6 @@ package co.edu.uniquindio.bancofx;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -43,10 +42,10 @@ public class MainController {
             if(nombreOriginal.equalsIgnoreCase(txtNombreEmpleado.getText()) && cedulaOriginal.equalsIgnoreCase(txtCedulaEmpleado.getText())){
 
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("menu-empleado.fxml"));
-                Parent root = loader.load();
 
-                Scene scene = new Scene(root);
+                Scene scene = new Scene(loader.load());
                 Stage stage = new Stage();
+                stage.setTitle("Menu Empleado");
                 stage.setScene(scene);
 
                 MenuEmpleadoController controller = loader.getController();
@@ -63,7 +62,17 @@ public class MainController {
     }
 
     @FXML
-    void registrarEmpleado(ActionEvent event) {
+    void registrarEmpleado(ActionEvent event) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("menu-registrarEmpleado.fxml"));
+
+        Scene scene = new Scene(loader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Menu Registro");
+        stage.setScene(scene);
+
+        MenuRegistrarEmpleadoController controller = loader.getController();
+        stage.show();
 
     }
 
