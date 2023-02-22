@@ -14,12 +14,9 @@
    </Label>
    <TableView fx:id="tblTablaCuentas" layoutX="93.0" layoutY="84.0" prefHeight="306.0" prefWidth="385.0">
      <columns>
-       <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
-       <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
-         <TableColumn fx:id="colCedula" prefWidth="75.0" text="Cedula" />
-         <TableColumn fx:id="colNumeroCuenta" prefWidth="75.0" text="Cuenta" />
-         <TableColumn fx:id="colDireccion" prefWidth="75.0" text="Direccion" />
-         <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+       <TableColumn fx:id="colNumero" prefWidth="124.0" text="Numero" />
+       <TableColumn fx:id="colSaldo" prefWidth="131.99998474121094" text="Saldo" />
+         <TableColumn fx:id="colTipoCuenta" prefWidth="129.5999755859375" text="Tipo de Cuenta" />
      </columns>
    </TableView>
 </Pane>

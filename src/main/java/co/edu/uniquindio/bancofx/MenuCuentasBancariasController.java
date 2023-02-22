@@ -1,37 +1,29 @@
 package co.edu.uniquindio.bancofx;
 
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MenuCuentasBancariasController implements Initializable {
+public class MenuCuentasBancariasController {
 
     @FXML
-    private TableColumn<?, ?> colApellido;
+    private TableColumn<?, ?> colNumero;
 
     @FXML
-    private TableColumn<?, ?> colCedula;
+    private TableColumn<?, ?> colSaldo;
 
     @FXML
-    private TableColumn<?, ?> colDireccion;
+    private TableColumn<?, ?> colTipoCuenta;
 
     @FXML
-    private TableColumn<?, ?> colEmail;
-
-    @FXML
-    private TableColumn<?, ?> colNombre;
-
-    @FXML
-    private TableColumn<?, ?> colNumeroCuenta;
-
-    @FXML
-    private TableView<?> tblTablaCuentas;
+    private TableView<CuentaModelo> tblTablaCuentas;
 
     public void initialize(URL url, ResourceBundle rb){
+
+
 
     }
 
