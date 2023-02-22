@@ -8,47 +8,33 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.bancofx.MenuRegistrarEmpleadoController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.bancofx.MenuRegistrarEmpleadoController">
    <TableView fx:id="tblListaEmpleados" layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="371.0">
       <columns>
-         <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
-         <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
-         <TableColumn fx:id="colCedula" prefWidth="75.0" text="Cedula" />
-         <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
-         <TableColumn fx:id="colDireccion" prefWidth="75.0" text="Direccion" />
+         <TableColumn fx:id="colNombre" prefWidth="123.99997138977051" text="Nombre" />
+         <TableColumn fx:id="colCodigo" prefWidth="106.85714721679688" text="Codigo" />
+         <TableColumn fx:id="colCedula" prefWidth="138.85707092285156" text="Cedula" />
       </columns>
    </TableView>
-   <Button fx:id="btnRegistrarEmpleado" layoutX="200.0" layoutY="401.0" mnemonicParsing="false" onAction="#registrarNuevoEmpleado" prefHeight="63.0" prefWidth="199.0" text="Registrar Empleado">
+   <Button fx:id="btnRegistrarEmpleado" layoutX="400.0" layoutY="306.0" mnemonicParsing="false" onAction="#registrarNuevoEmpleado" prefHeight="63.0" prefWidth="199.0" text="Registrar Empleado">
       <font>
          <Font name="System Bold" size="18.0" />
       </font>
    </Button>
    <TextField fx:id="txtNombreEmpleado" layoutX="416.0" layoutY="52.0" />
-   <TextField fx:id="txtCedulaEmpleado" layoutX="416.0" layoutY="201.0" />
-   <TextField fx:id="txtApellidoEmpleado" layoutX="416.0" layoutY="127.0" />
+   <TextField fx:id="txtCedulaEmpleado" layoutX="416.0" layoutY="139.0" />
    <Label layoutX="454.0" layoutY="24.0" text="Nombre">
       <font>
          <Font name="Arial Black" size="14.0" />
       </font>
    </Label>
-   <Label layoutX="459.0" layoutY="97.0" text="Apellido">
+   <Label layoutX="463.0" layoutY="96.0" text="Cedula">
       <font>
          <Font name="Arial Black" size="14.0" />
       </font>
    </Label>
-   <Label layoutX="459.0" layoutY="171.0" text="Cedula">
-      <font>
-         <Font name="Arial Black" size="14.0" />
-      </font>
-   </Label>
-   <TextField fx:id="txtEmailEmpleado" layoutX="416.0" layoutY="335.0" />
-   <TextField fx:id="txtDireccionEmpleado" layoutX="416.0" layoutY="270.0" />
-   <Label layoutX="464.0" layoutY="307.0" text="Email">
-      <font>
-         <Font name="Arial Black" size="14.0" />
-      </font>
-   </Label>
-   <Label layoutX="453.0" layoutY="240.0" text="Direccion">
+   <TextField fx:id="txtCodigo" layoutX="416.0" layoutY="239.0" />
+   <Label layoutX="453.0" layoutY="200.0" text="Codigo">
       <font>
          <Font name="Arial Black" size="14.0" />
       </font>

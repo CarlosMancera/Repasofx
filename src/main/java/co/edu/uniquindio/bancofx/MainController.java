@@ -50,14 +50,11 @@ public class MainController {
 
                 MenuEmpleadoController controller = loader.getController();
                 stage.show();
-            }else{
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Error de credenciales");
-                alert.setContentText("Verifique que el nombre y cédula son correctos");
-                alert.showAndWait();
             }
 
         }
+
+
 
     }
 

@@ -1,14 +1,19 @@
 package co.edu.uniquindio.bancofx;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
-public class MenuClienteController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MenuClienteController implements Initializable {
 
     @FXML
     private Button btnAgregarCliente;
@@ -41,7 +46,7 @@ public class MenuClienteController {
     private AnchorPane tablaPersonas;
 
     @FXML
-    private TableView<?> tblListaClientes;
+    private TableView<ClienteModelo> tblListaClientes;
 
     @FXML
     private TextField txtApellido;
@@ -61,8 +66,16 @@ public class MenuClienteController {
     @FXML
     private TextField txtNombre;
 
+    private ObservableList<ClienteModelo> clientes;
+
+    public void initialize(URL url, ResourceBundle rb){
+
+    }
+
     @FXML
     void agregarCliente(ActionEvent event) {
+
+
 
     }
 
