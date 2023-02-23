@@ -40,7 +40,6 @@ public class MainController {
             String cedulaOriginal = e.getCedula();
 
             if(nombreOriginal.equalsIgnoreCase(txtNombreEmpleado.getText()) && cedulaOriginal.equalsIgnoreCase(txtCedulaEmpleado.getText())){
-
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("menu-empleado.fxml"));
 
                 Scene scene = new Scene(loader.load());

@@ -35,10 +35,9 @@ public class BancoModelo {
         listaEmpleados.add(empleado);
     }
 
-    public void setTransaccion(TransaccionModelo transaccion, EmpleadoModelo empleado){
+    public void setTransaccion(TransaccionModelo transaccion){
 
         listaTransacciones.add(transaccion);
-        empleado.setTransaccion(transaccion);
 
     }
 
