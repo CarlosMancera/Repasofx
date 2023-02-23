@@ -4,10 +4,8 @@ public class TransDeposito extends TransaccionModelo {
 
     public TransDeposito(double valor, String hora, String fecha){
         super(valor, hora, fecha);
+        super.setTipoTransaccion("Deposito");
     }
 
-    @Override
-    public String getTipoTransaccion() {
-        return "Deposito";
-    }
+
 }

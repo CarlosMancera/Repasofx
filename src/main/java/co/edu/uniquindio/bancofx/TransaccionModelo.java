@@ -34,4 +34,10 @@ public class TransaccionModelo {
     public void setEstadoTransaccion(String estadoTransaccion) {
         this.estadoTransaccion = estadoTransaccion;
     }
+
+    public void setTipoTransaccion(String tipoTransaccion) {
+        this.tipoTransaccion = tipoTransaccion;
+    }
 }
+
+

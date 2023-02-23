@@ -14,6 +14,7 @@ public class BancoModelo {
     public BancoModelo(){
         TransaccionModelo transaccionMaster = new TransRetiro(100000, "18:00", "22/02/2023");
         CuentaModelo cuentaMaster = new CuentaAhorros("666", 150000);
+        transaccionMaster.setEstadoTransaccion("Exitosa");
 
         listaCuentas.add(cuentaMaster);
         listaEmpleados.add(new EmpleadoModelo("Omar", "1981", "1981"));
