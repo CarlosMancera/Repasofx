@@ -2,7 +2,7 @@ package co.edu.uniquindio.bancofx;
 
 public class CuentaModelo {
 
-    private String numero;
+    private String numero, tipoCuenta;
     private double saldo;
 
     public CuentaModelo(String numero, double saldo){
@@ -24,5 +24,13 @@ public class CuentaModelo {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    public String getTipoCuenta() {
+        return tipoCuenta;
+    }
+
+    public void setTipoCuenta(String tipoCuenta) {
+        this.tipoCuenta = tipoCuenta;
     }
 }

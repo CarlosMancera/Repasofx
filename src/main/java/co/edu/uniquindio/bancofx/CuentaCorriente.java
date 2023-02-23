@@ -6,6 +6,7 @@ public class CuentaCorriente extends CuentaModelo {
 
     public CuentaCorriente(String numero, double saldo){
         super(numero, saldo);
+        super.setTipoCuenta("Corriente");
     }
 
     public double getInteresAnual() {
