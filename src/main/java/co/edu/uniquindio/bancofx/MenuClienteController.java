@@ -5,11 +5,9 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -141,12 +139,82 @@ public class MenuClienteController implements Initializable {
     @FXML
     void editarCliente(ActionEvent event) {
 
+        ClienteModelo clienteModelo = this.tblListaClientes.getSelectionModel().getSelectedItem();
 
+        if( clienteModelo == null){
+
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText("Debes seleccionar un cliente");
+            alert.showAndWait();
+
+        }else{
+            String nombre = this.txtNombre.getText();
+            String apellido = this.txtApellido.getText();
+            String cedula = this.txtCedula.getText();
+            String direccion = this.txtDireccion.getText();
+            String email = this.txtEmail.getText();
+            String numeroCuenta = this.txtNumeroCuenta.getText();
+            String tipoCuenta = this.txtTipoCuenta.getText();
+            double saldoCuenta = Double.parseDouble(this.txtSaldoCuenta.getText());
+            CuentaModelo cuenta = null;
+
+            if(tipoCuenta.equalsIgnoreCase("ahorros")){
+                cuenta = new CuentaAhorros(numeroCuenta, saldoCuenta);
+            } else if (tipoCuenta.equalsIgnoreCase("corriente")) {
+                cuenta = new CuentaCorriente(numeroCuenta, saldoCuenta);
+            }
+
+            ClienteModelo clienteAux = new ClienteModelo(nombre, apellido, cedula, direccion, email,cuenta);
+
+            if(!this.clientes.contains(clienteAux)){
+                this.clientes.remove(clienteModelo);
+                this.clientes.add(clienteAux);
+                this.tblListaClientes.setItems(clientes);
+                this.cuentas.remove(clienteModelo.getCuentaUnica());
+                this.cuentas.add(cuenta);
+                this.tblCuentaCliente.setItems(cuentas);
+                UnibancoApplication.unibanco.getListaCuentas().remove(clienteModelo.getCuentaUnica());
+                UnibancoApplication.unibanco.getListaClientes().remove(clienteModelo);
+
+                UnibancoApplication.unibanco.setCliente(clienteAux);
+            }else{
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(null);
+                alert.setTitle("Error");
+                alert.setContentText("La persona ya existe mi rey");
+                alert.showAndWait();
+            }
+        }
 
     }
 
     @FXML
     void eliminarCliente(ActionEvent event) {
+
+        ClienteModelo clienteModelo = this.tblListaClientes.getSelectionModel().getSelectedItem();
+        this.clientes.remove(clienteModelo);
+        this.cuentas.remove(clienteModelo.getCuentaUnica());
+        UnibancoApplication.unibanco.getListaCuentas().remove(clienteModelo.getCuentaUnica());
+        UnibancoApplication.unibanco.getListaClientes().remove(clienteModelo);
+
+    }
+
+    @FXML
+    void seleccionarCliente(MouseEvent event) {
+
+        ClienteModelo clienteModelo = this.tblListaClientes.getSelectionModel().getSelectedItem();
+        CuentaModelo cuentaAsociada = clienteModelo.getCuentaUnica();
+
+        this.txtNombre.setText(clienteModelo.getNombre());
+        this.txtApellido.setText(clienteModelo.getApellido());
+        this.txtEmail.setText(clienteModelo.getEmail());
+        this.txtDireccion.setText(clienteModelo.getDireccion());
+        this.txtCedula.setText(clienteModelo.getCedula());
+        this.txtNumeroCuenta.setText(cuentaAsociada.getNumero());
+        this.txtSaldoCuenta.setText(""+cuentaAsociada.getSaldo());
+        this.txtTipoCuenta.setText(cuentaAsociada.getTipoCuenta());
 
     }
 
