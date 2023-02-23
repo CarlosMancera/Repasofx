@@ -109,10 +109,39 @@ public class MenuClienteController implements Initializable {
     @FXML
     void agregarCliente(ActionEvent event) {
 
+        CuentaModelo cuenta = null;
+        String nombre = this.txtNombre.getText();
+        String apellido = this.txtApellido.getText();
+        String cedula = this.txtCedula.getText();
+        String direccion = this.txtDireccion.getText();
+        String email = this.txtEmail.getText();
+
+        String numero = this.txtNumeroCuenta.getText();
+        String tipoCuenta = this.txtTipoCuenta.getText();
+        double saldo = Double.parseDouble(this.txtSaldoCuenta.getText());
+
+        if(tipoCuenta.equalsIgnoreCase("ahorros")){
+            cuenta = new CuentaAhorros(numero, saldo);
+        } else if (tipoCuenta.equalsIgnoreCase("corriente")) {
+            cuenta = new CuentaCorriente(numero, saldo);
+        }
+
+        ClienteModelo cliente = new ClienteModelo(nombre, apellido, cedula, direccion, email, cuenta);
+        UnibancoApplication.unibanco.setCliente(cliente);
+
+        this.clientes.add(cliente);
+        this.tblListaClientes.setItems(clientes);
+
+        this.cuentas.add(cuenta);
+        this.tblCuentaCliente.setItems(cuentas);
+
+
     }
 
     @FXML
     void editarCliente(ActionEvent event) {
+
+
 
     }
 

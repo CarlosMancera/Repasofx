@@ -66,7 +66,6 @@ public class MenuRegistrarEmpleadoController implements Initializable {
         EmpleadoModelo e = new EmpleadoModelo(nombre, cedula, codigo);
         UnibancoApplication.unibanco.setEmpleado(e);
 
-
         this.empleados.add(e);
         this.tblListaEmpleados.setItems(empleados);
 
